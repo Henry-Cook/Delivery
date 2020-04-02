@@ -238,7 +238,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 80vw;
   background: white;
   text-align: center;
   padding: 10px 0 25px 0;
@@ -246,7 +246,7 @@ hr {
   margin: 25px 0 0 0;
 }
 .pastData{
-  width: 480px;
+  width: 70vw;
   background: white;
   text-align: center;
   padding: 5px 0 5px 0;
