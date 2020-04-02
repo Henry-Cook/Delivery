@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+
+    <section>
+      <div id="login-box" class="login-box">
+        <form action="#">
+          <p>Username</p>
+          <input id="username" />
+          <br />
+          <p>Password</p>
+          <input id="password" />
+          <br />
+          <button type="button" id="loginBtn">Login</button>
+        </form>
+      </div>
+
+      <div id="wrapper" class="hide">
+        <section id="order-form" class="order-form">
+          <div class="menu">
+            <h2>Menu:</h2>
+            <hr />
+            <p>Chocolate Chip</p>
+            <p>Oatmeal</p>
+            <p>Macadmaia</p>
+          </div>
+          <div class="order-options">
+            <form action="text">
+              <select name="menu-dropdown" id="menu-dropdown">
+                <option value="Choose">Choose Option</option>
+                <option id="orderSelection" value="Chocolate">Chocolate</option>
+                <option id="orderSelection" value="Oatmeal">Oatmeal</option>
+                <option id="orderSelection" value="Macadmia">Macadmia</option>
+              </select>
+              <br />
+              <select name="day-dropdown" id="day-dropdown">
+                <option value="choose-day">Delivery Day</option>
+                <option id="daySelection" value="Monday">Monday</option>
+                <option id="daySelection" value="Tuesday">Tuesday</option>
+                <option id="daySelection" value="Wednesday">Wednesday</option>
+                <option id="daySelection" value="Thursday">Thursday</option>
+                <option id="daySelection" value="Friday">Friday</option>
+                <option id="daySelection" value="Saturday">Saturday</option>
+                <option id="daySelection" value="Sunday">Sunday</option>
+              </select>
+              <br />
+              <select name="time-dropdown" id="time-dropdown">
+                <option value="choose-time">Delivery Window</option>
+                <option id="timeSelection">9:00am - 12:00am</option>
+                <option id="timeSelection">12:00pm - 3:00pm</option>
+                <option id="timeSelection">3:00pm - 6:00pm</option>
+                <option id="timeSelection">6:00pm - 9:00pm</option>
+                <br />
+              </select>
+              <br />
+            </form>
+          </div>
+          <div class="order-buttons">
+            <button
+              id="confirmation-btn"
+              class="confirmation-btn"
+              type="submit"
+              onclick="showOrder()"
+            >
+              Confirm Order
+            </button>
+            <div class="order-confirmation">
+              <p id="results" class="order-confirmation-results"></p>
+            </div>
+            <button
+              id="order-btn"
+              class="order-btn hide"
+              onclick="orderPlaced()"
+              type="submit"
+            >
+              Place Order
+            </button>
+          </div>
+        </section>
+
+        <section id="placed-order" class=" order-placed hide">
+          <p>Your order has been placed!</p>
+        </section>
+      </div>
+    </section>
+
+    <footer></footer>
+  <script src="js/main.js"></script>
+  </body>
+</html>

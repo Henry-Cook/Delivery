@@ -1,0 +1,300 @@
+/**************************** CSS Reset *****************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  font-family: "Lato", sans-serif;
+}
+
+/**************************** Login Page *****************************/
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  background: white;
+  display: block;
+  text-align: center;
+  padding: 50px 0 50px 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 125px 0 0 0;
+}
+input {
+  border: 1px solid black;
+  height: 20px;
+  margin: 10px;
+}
+button {
+  height: 30px;
+  width: 50px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+button:hover {
+  background: white;
+  color: black;
+}
+/**************************** NavBar *****************************/
+header {
+  background: black;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+ul{
+  width: 100%;
+  list-style-type: none;
+}
+li{
+  display: inline;
+  margin: 0 10px 0 10px;
+}
+ li:hover{
+   text-decoration: underline;
+ }
+ .logOut{
+   float: right;
+   right: 5%;
+    height: 30px;
+    width: 80px;
+    background: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+   }
+   .logOut:hover {
+     background: white;
+     color: black;
+   }
+ }
+
+/**************************** Order Page *****************************/
+
+
+.menu {
+  text-align: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+.order-options {
+  text-align: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 50px 50px 50px 50px;
+  margin: 20px 0 0 0;
+}
+.order-btn {
+  height: 40px;
+  width: 100px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0 0 0;
+}
+.confirmation-btn {
+  height: 40px;
+  width: 100px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0 0 0;
+}
+select {
+  margin: 5px;
+}
+.order-buttons {
+  text-align: center;
+}
+.order-confirmation-results {
+  margin: 20px 0 0 0;
+}
+hr {
+  border: black 0.5px solid;
+}
+.order-placed {
+  text-align: center;
+  width: 200px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 20px auto;
+}
+/**************************** Delivery Page *****************************/
+.deliveryBoxes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.current{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  background: white;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 25px 0 0 0;
+}
+.past{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background: white;
+  text-align: center;
+  padding: 10px 0 25px 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 25px 0 0 0;
+}
+.pastData{
+  width: 480px;
+  background: white;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 5px 0 0 0;
+}
+
+/**************************** Profile Page *****************************/
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background: white;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 5px 0 0 0;
+}
+
+.profileData{
+  width: 300px;
+  background: white;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 5px 0 20px 0;
+}
+.editProfile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profBtn {
+  height: 30px;
+  width: 60px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.profBtn:hover {
+  background: white;
+  color: black;
+}
+/**************************** Hide *****************************/
+.hide {
+  display: none;
+}

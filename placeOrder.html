@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="placeOrder.html">Place Order</a></li>
+        <li><a href="deliveries.html">Deliveries</a></li>
+        <li><a href="myProfile.html">My Profile</a></li>
+        <span><a href="index.html"><button class="logOut">Log Out</button></a></span>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="wrapper">
+    <section id="order-form" class="order-form">
+      <div class="order-options">
+        <p><strong>Menu:</strong></p>
+        <p>Sativa/Indica Hybrid</p>
+        <form action="text">
+          <select name="day-dropdown" id="day-dropdown">
+            <option value="choose-day">Delivery Day</option>
+            <option id="daySelection" value="Monday">Monday</option>
+            <option id="daySelection" value="Tuesday">Tuesday</option>
+            <option id="daySelection" value="Wednesday">Wednesday</option>
+            <option id="daySelection" value="Thursday">Thursday</option>
+            <option id="daySelection" value="Friday">Friday</option>
+            <option id="daySelection" value="Saturday">Saturday</option>
+            <option id="daySelection" value="Sunday">Sunday</option>
+          </select>
+          <br />
+          <select name="time-dropdown" id="time-dropdown">
+            <option value="choose-time">Delivery Window</option>
+            <option id="timeSelection">12:00pm - 12:30pm</option>
+            <option id="timeSelection">12:30pm - 1:00pm</option>
+            <option id="timeSelection">12:30pm - 1:00pm</option>
+            <option id="timeSelection">1:30pm - 2:00pm</option>
+            <option id="timeSelection">2:30pm - 3:00pm</option>
+            <option id="timeSelection">3:30pm - 4:00pm</option>
+            <option id="timeSelection">4:00pm - 4:30pm</option>
+            <option id="timeSelection">4:30pm - 5:00pm</option>
+            <option id="timeSelection">5:00pm - 5:30pm</option>
+            <option id="timeSelection">5:30pm - 6:00pm</option>
+            <option id="timeSelection">6:00pm - 6:30pm</option>
+            <option id="timeSelection">6:30pm - 7:00pm</option>
+            <option id="timeSelection">7:00pm - 7:30pm</option>
+            <option id="timeSelection">7:30pm - 8:00pm</option>
+            <option id="timeSelection">8:00pm - 8:30pm</option>
+            <option id="timeSelection">8:30pm - 9:00pm</option>
+            <br />
+          </select>
+          <br />
+        </form>
+
+      <div class="order-buttons">
+        <button id="confirmation-btn" class="confirmation-btn" type="submit" onclick="showOrder()">
+          Confirm Order
+        </button>
+        <div class="order-confirmation">
+          <p id="results" class="order-confirmation-results"></p>
+        </div>
+        <button id="order-btn" class="order-btn hide" onclick="orderPlaced()" type="submit">
+          Place Order
+        </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="placed-order" class=" order-placed hide">
+      <p>Your order has been placed!</p>
+    </section>
+  </div>
+  </section>
+
+  <footer></footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
