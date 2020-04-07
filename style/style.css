@@ -115,6 +115,7 @@ li:hover {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto 50px auto;
+  width: 60vw;
 }
 
 .menu {
@@ -135,6 +136,7 @@ form {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   padding: 50px 50px 50px 50px;
   margin: 20px 0 0 0;
+  width: 60vw;
 }
 
 .order-btn {
@@ -180,10 +182,10 @@ hr {
 
 .item {
   text-align: left;
-  width: 400px;
+  width: 50vw;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   padding: 5px;
-  margin: 5px 0 0 0;
+  margin: 0 auto;
 }
 
 .itemPrice {
@@ -191,10 +193,14 @@ hr {
 }
 
 .order-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   padding: 10px;
   margin: 20px 0 0 0;
+  width: 60vw;
 }
 
 .Remove {
