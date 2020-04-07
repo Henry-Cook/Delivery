@@ -1,78 +1,6 @@
 /**************************** CSS Reset *****************************/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -80,11 +8,19 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 html {
   font-family: "Lato", sans-serif;
 }
 
 /**************************** Login Page *****************************/
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 section {
   display: flex;
@@ -93,23 +29,25 @@ section {
   width: 60%;
   margin: 0 auto;
 }
+
 .login-box {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 250px;
   background: white;
-  display: block;
   text-align: center;
   padding: 50px 0 50px 0;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin: 125px 0 0 0;
 }
+
 input {
   border: 1px solid black;
   height: 20px;
   margin: 10px;
 }
+
 button {
   height: 30px;
   width: 50px;
@@ -118,51 +56,65 @@ button {
   border: 1px solid black;
   border-radius: 10px;
 }
+
 button:hover {
   background: white;
   color: black;
 }
+
 /**************************** NavBar *****************************/
+
 header {
   background: black;
   width: 100%;
   padding: 30px 0 30px 0;
   text-align: center;
 }
-ul li a{
+
+ul li a {
   text-decoration: none;
   color: white;
 }
-ul{
+
+ul {
   width: 100%;
   list-style-type: none;
 }
-li{
+
+li {
   display: inline;
   margin: 0 10px 0 10px;
 }
- li:hover{
-   text-decoration: underline;
- }
- .logOut{
-   float: right;
-   right: 5%;
-    height: 30px;
-    width: 80px;
-    background: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 0 20px 0 0;
-   }
-   .logOut:hover {
-     background: white;
-     color: black;
-   }
- }
+
+li:hover {
+  text-decoration: underline;
+}
+
+.logOut {
+  float: right;
+  right: 5%;
+  height: 30px;
+  width: 80px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+}
+
+.logOut:hover {
+  background: white;
+  color: black;
+}
 
 /**************************** Order Page *****************************/
 
+.order-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
 .menu {
   text-align: center;
@@ -170,12 +122,20 @@ li{
   padding: 10px;
   margin: 20px 0 0 0;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 .order-options {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   padding: 50px 50px 50px 50px;
   margin: 20px 0 0 0;
 }
+
 .order-btn {
   height: 40px;
   width: 100px;
@@ -186,7 +146,64 @@ li{
   padding: 5px;
   margin: 10px 0 0 0;
 }
-.confirmation-btn {
+
+select {
+  margin: 5px;
+}
+
+.order-buttons {
+  text-align: center;
+}
+
+.order-confirmation-results {
+  margin: 20px 0 0 0;
+}
+
+hr {
+  border: black 0.5px solid;
+}
+
+.order-placed {
+  text-align: center;
+  width: 200px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 20px auto;
+}
+
+/**************************** Order Page New Elements *****************************/
+
+.item {
+  text-align: left;
+  width: 400px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 5px 0 0 25px;
+}
+
+.itemPrice {
+  float: right;
+}
+
+.order-view {
+  text-align: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 20px 0 0 20px;
+}
+
+.Remove {
+  height: 20px;
+  width: 30px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 0 0 0 10px;
+}
+
+.place-order-btn {
   height: 40px;
   width: 100px;
   background: black;
@@ -196,33 +213,25 @@ li{
   padding: 5px;
   margin: 10px 0 0 0;
 }
-select {
-  margin: 5px;
-}
-.order-buttons {
-  text-align: center;
-}
-.order-confirmation-results {
-  margin: 20px 0 0 0;
-}
-hr {
-  border: black 0.5px solid;
-}
-.order-placed {
+
+.results {
   text-align: center;
   width: 200px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   padding: 5px;
   margin: 20px auto;
 }
+
 /**************************** Delivery Page *****************************/
-.deliveryBoxes{
+
+.deliveryBoxes {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.current{
+
+.current {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +242,8 @@ hr {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin: 25px 0 0 0;
 }
-.past{
+
+.past {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +255,8 @@ hr {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin: 25px 0 0 0;
 }
-.pastData{
+
+.pastData {
   width: 70vw;
   background: white;
   text-align: center;
@@ -255,7 +266,8 @@ hr {
 }
 
 /**************************** Profile Page *****************************/
-.profile{
+
+.profile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,7 +280,7 @@ hr {
   margin: 40px 0 0 0;
 }
 
-.profileData{
+.profileData {
   width: 60vw;
   background: white;
   text-align: center;
@@ -276,11 +288,13 @@ hr {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin: 5px 0 20px 0;
 }
-.editProfile{
+
+.editProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .profBtn {
   height: 30px;
   width: 60px;
@@ -290,11 +304,39 @@ hr {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
 .profBtn:hover {
   background: white;
   color: black;
 }
+
 /**************************** Hide *****************************/
+
 .hide {
   display: none;
+}
+
+/*********************** Media Queries **********************/
+
+@media(max-width: 700px) {
+  .order-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto 50px auto;
+  }
+  .item {
+    text-align: left;
+    width: 400px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin: 5px 0 0 0;
+  }
+  .order-view {
+    text-align: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 20px 0 0 0;
+  }
 }
