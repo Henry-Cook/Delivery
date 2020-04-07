@@ -113,7 +113,8 @@ li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  margin: 0 auto 50px auto;
 }
 
 .menu {
@@ -171,6 +172,10 @@ hr {
   margin: 20px auto;
 }
 
+.day-dropdown {
+  margin-top: 20px;
+}
+
 /**************************** Order Page New Elements *****************************/
 
 .item {
@@ -178,7 +183,7 @@ hr {
   width: 400px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   padding: 5px;
-  margin: 5px 0 0 25px;
+  margin: 5px 0 0 0;
 }
 
 .itemPrice {
@@ -189,7 +194,7 @@ hr {
   text-align: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  margin: 20px 0 0 20px;
+  margin: 20px 0 0 0;
 }
 
 .Remove {
@@ -314,29 +319,4 @@ hr {
 
 .hide {
   display: none;
-}
-
-/*********************** Media Queries **********************/
-
-@media(max-width: 700px) {
-  .order-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto 50px auto;
-  }
-  .item {
-    text-align: left;
-    width: 400px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    padding: 5px;
-    margin: 5px 0 0 0;
-  }
-  .order-view {
-    text-align: center;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    margin: 20px 0 0 0;
-  }
 }

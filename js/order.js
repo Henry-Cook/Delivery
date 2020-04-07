@@ -3,24 +3,32 @@ let total = 0;
 
 //Collecting the values from the form and assigning variables:
 function collectValues() {
-  let day = document.getElementById("day-dropdown").value;
-  let time = document.getElementById("time-dropdown").value;
   let menu = document.getElementById("menu-dropdown").value;
   let amount = document.getElementById("amount-dropdown").value;
   let flower = document.getElementById("flower-dropdown").value;
   //If statement to make sure that selections are made, If so call next functions:
   if (
-    day === "choose-day" ||
-    time === "choose-time" ||
     menu === "choose-menu" ||
     amount === "choose-amount" ||
     flower === "choose-flower"
   ) {
     alert("Please complete all selections.");
   } else {
-    addElement(amount, menu, flower);
-    resetValue();
-    totalPrice(amount);
+    if (menu === "Pre-Rolled Oil dipped hash rolled Party Joint.") {
+      amount = "25";
+      addElement(amount, menu, flower);
+      resetValue();
+      totalPrice(amount);
+    } else if (menu === "Pure Hash") {
+      amount = "30";
+      addElement(amount, menu, flower);
+      resetValue();
+      totalPrice(amount);
+    } else {
+      addElement(amount, menu, flower);
+      resetValue();
+      totalPrice(amount);
+    }
   }
 }
 
@@ -55,8 +63,6 @@ function resetValue() {
   //Sets the dropdowns back to original state
   flower.selectedIndex = 0;
   menu.selectedIndex = 0;
-  time.selectedIndex = 0;
-  day.selectedIndex = 0;
   amount.selectedIndex = 0;
 }
 
@@ -69,14 +75,20 @@ function totalPrice(amount) {
 }
 
 function orderConfirm() {
-  let makeOrder = document.getElementById("order-form");
-  let orderAlert = document.getElementById("results");
   let day = document.getElementById("day-dropdown").value;
   let time = document.getElementById("time-dropdown").value;
-  makeOrder.classList.add("hide");
-  orderAlert.classList.remove("hide");
-  orderAlert.innerHTML =
-    "<h3>Your order will arrive on " + day + " between " + time + ".</h3>";
+  if (day === "choose-day" || time === "choose-time") {
+    alert("Please chose a delivery time and date");
+  } else {
+    let makeOrder = document.getElementById("order-form");
+    let orderAlert = document.getElementById("results");
+    let day = document.getElementById("day-dropdown").value;
+    let time = document.getElementById("time-dropdown").value;
+    makeOrder.classList.add("hide");
+    orderAlert.classList.remove("hide");
+    orderAlert.innerHTML =
+      "<h3>Your order will arrive on " + day + " between " + time + ".</h3>";
+  }
 }
 
 //Function to remove the new element
