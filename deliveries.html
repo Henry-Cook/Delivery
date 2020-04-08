@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Document</title>
-</head>
+  <body>
+    <header>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav>
+        <ul id="unorderedList" class="hide">
+          <li><a href="placeOrder.html">Place Order</a></li>
+          <li><a href="deliveries.html">Deliveries</a></li>
+          <li><a href="myProfile.html">My Profile</a></li>
+          <span
+            ><a href="index.html"
+              ><button class="logOut">Log Out</button></a
+            ></span
+          >
+        </ul>
+      </nav>
+    </header>
 
-<body>
+    <section class="deliveryBoxes">
+      <div class="current">
+        <h3>No Current Deliveries</h3>
+      </div>
+      <div id="past" class="past">
+        <h3>Past Deliveries</h3>
+      </div>
+    </section>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="placeOrder.html">Place Order</a></li>
-        <li><a href="deliveries.html">Deliveries</a></li>
-        <li><a href="myProfile.html">My Profile</a></li>
-          <span><a href="index.html"><button class="logOut">Log Out</button></a></span>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="deliveryBoxes">
-    <div class="current">
-      <h3>No Current Deliveries</h3>
-    </div>
-    <div id="past" class="past">
-      <h3>Past Deliveries</h3>
-    </div>
-  </section>
-
-
-  <script src="js/deliveryRecords.js"></script>
-</body>
-
+    <script src="js/deliveryRecords.js"></script>
+  </body>
 </html>

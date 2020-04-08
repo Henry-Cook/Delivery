@@ -90,5 +90,8 @@ function orderConfirm() {
       "<h3>Your order will arrive on " + day + " between " + time + ".</h3>";
   }
 }
-
-//Function to remove the new element
+//Function for menu
+function myFunction(x) {
+  x.classList.toggle("change");
+  document.getElementById("unorderedList").classList.toggle("hide");
+}

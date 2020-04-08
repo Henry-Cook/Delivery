@@ -77,13 +77,16 @@ ul li a {
 }
 
 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   list-style-type: none;
 }
 
 li {
-  display: inline;
-  margin: 0 10px 0 10px;
+  margin: 20px 10px 10px 10px;
 }
 
 li:hover {
@@ -91,7 +94,6 @@ li:hover {
 }
 
 .logOut {
-  float: right;
   right: 5%;
   height: 30px;
   width: 80px;
@@ -99,12 +101,41 @@ li:hover {
   color: white;
   border: 1px solid white;
   border-radius: 10px;
-  margin: 0 20px 0 0;
+  margin: 40px 10px 10px 10px;
 }
 
 .logOut:hover {
   background: white;
   color: black;
+}
+
+/**************************** Hamburger *****************************/
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /**************************** Order Page *****************************/
