@@ -25,7 +25,8 @@ function picksFlower() {
   flowerPicks.classList.toggle('hide');
   flowerChevron.classList.toggle('fa-chevron-down');
   flowerChevron.classList.toggle('fa-chevron-up');
-  addFlowerBtn.classList.toggle('hide');
+
+  addFlowerBtn.classList.remove('hide');
   }    
 function picksEdibles() {
   //This clears the previous btns options
@@ -35,7 +36,8 @@ function picksEdibles() {
   ediblePicks.classList.toggle('hide');
   edibleChevron.classList.toggle('fa-chevron-down');
   edibleChevron.classList.toggle('fa-chevron-up');
-  addEdibleBtn.classList.toggle('hide');
+
+  addEdibleBtn.classList.remove('hide');
   }      
 function picksExtras() {
   //This clears the previous btns options
@@ -45,7 +47,8 @@ function picksExtras() {
   extraPicks.classList.toggle('hide');
   extraChevron.classList.toggle('fa-chevron-down');
   extraChevron.classList.toggle('fa-chevron-up');
-  addExtraBtn.classList.toggle('hide');
+
+  addExtraBtn.classList.remove('hide');
 }
  
 //Collecting the values from the form and assigning variables, then calling specified functions 
@@ -59,6 +62,9 @@ function collectFlowerValues() {
   addElement(flower, amount)
   resetValue()
   totalPrice(amount)
+  flowerPicks.classList.add('hide');
+  flowerChevron.classList.toggle('fa-chevron-down');
+  flowerChevron.classList.toggle('fa-chevron-up');
   };
   };
 function collectEdibleValues(){
@@ -66,6 +72,9 @@ function collectEdibleValues(){
   addElement(edibles, "60");
   resetValue();
   totalPrice('60');
+  ediblePicks.classList.add('hide');
+  edibleChevron.classList.toggle('fa-chevron-down');
+  edibleChevron.classList.toggle('fa-chevron-up');
 }
 function collectExtraValues(){
   let extra = document.getElementById('extra-dropdown').value;
@@ -74,18 +83,30 @@ function collectExtraValues(){
     price = '30';
     addElement(extra, price);
     totalPrice(price);
+    extraPicks.classList.add('hide');
+    extraChevron.classList.toggle('fa-chevron-down');
+    extraChevron.classList.toggle('fa-chevron-up');
   }else if(extra === "Pre-Rolled Oil dipped hash rolled Party Joint."){
     price = "25";
     addElement(extra, price);
     totalPrice(price);
+    extraPicks.classList.add('hide');
+    extraChevron.classList.toggle('fa-chevron-down');
+    extraChevron.classList.toggle('fa-chevron-up');
   }else if(extra === "1ml Pens"){
     price = "60";
     addElement(extra, price);
     totalPrice(price);
+    extraPicks.classList.add('hide');
+    extraChevron.classList.toggle('fa-chevron-down');
+    extraChevron.classList.toggle('fa-chevron-up');
   }else if(extra === "1ml Shatter Pens"){
     price = '100';
     addElement(extra, price);
     totalPrice(price);
+    extraPicks.classList.add('hide');
+    extraChevron.classList.toggle('fa-chevron-down');
+    extraChevron.classList.toggle('fa-chevron-up');
   }else{
     alert("Please make a selection");
   }

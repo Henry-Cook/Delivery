@@ -25,31 +25,21 @@
     </nav>
   </header>
 
-  <section id="order-form" class="order-form">
-    <div class="order-options">
-      <h1><strong>Build Order:</strong></h1>
+  <div id="congratsAlert" class="hide">
+    <div class="congrats">
+      <h1>You qualify for a free Item worth up to $60</h1>
+      <p>Take Your pick:</p>
       <br>
-
-      <form action="text">
-        <!------------------Flower Drop Down ------------------------------->
+      <form class="congrats-form">
         <p><strong>Flower:</strong></p>
-        <select name="flower-dropdown" id="flower-dropdown" onclick="flowerAmount()">
+        <select name="flower-dropdown">
           <option value="choose-flower">Choose Flower</option>
           <option id="daySelection" value="Indica">Indica</option>
           <option id="daySelection" value="Sativa">Sativa</option>
           <option id="daySelection" value="Hybrid">Hybrid</option>
         </select>
-        <!------------------Amount Drop Down ------------------------------->
-        <select class="hide" name="amount-dropdown" id="amount-dropdown">
-          <option value="choose-amount">Amount</option>
-          <option id="daySelection" value="60">$60</option>
-          <option id="daySelection" value="120">$120</option>
-          <option id="daySelection" value="320">$300</option>
-        </select>
-        <br />
-        <!------------------Edible Drop Down ------------------------------->
         <p><strong>Edible's:</strong></p>
-        <select name="menu-dropdown" id="menu-dropdown">
+        <select name="menu-dropdown">
           <option value="choose-menu">Choose Edible</option>
           <option id="orderSelection" value="Milk chocolate ">Milk chocolate</option>
           <option id="orderSelection" value="Dark chocolate">Dark chocolate</option>
@@ -61,73 +51,26 @@
           <option id="orderSelection" value="Gorrilla Glue shatter">Gorrilla Glue shatter</option>
           <option id="orderSelection" value="Liquid Lemon">Liquid Lemon Drops</option>
         </select>
-        <br>
-
-        <!------------------Extras Drop Down ------------------------------->
         <p><strong>Extra's:</strong></p>
-        <select name="extraSelection" id="extra-dropdown">
-          <option value="choose-menu">Choose Extra</option>
-          <option id="orderSelection" value="Pure Hash">Pure Hash</option>
-          <option id="orderSelection" value="Pre-Rolled Oil dipped hash rolled Party Joint.">
-            Pre-Rolled Oil dipped hash rolled Party Joint.</option>
+        <select name="extraSelection">
+        <option value="choose-menu">Choose Extra</option>
+        <option id="orderSelection" value="Pure Hash">Pure Hash</option>
+        <option id="orderSelection" value="Pre-Rolled Oil dipped hash rolled Party Joint.">
+          Pre-Rolled Oil Dipped Hash Rolled Party Joint.</option>
+        <option id="orderSelection" value="1ml Pens">1ml Pens</option>
         </select>
-        <br>
-
       </form>
-      <!------------------Add button ------------------------------->
-      <div class="order-buttons">
-        <button id="confirmation-btn" class="confirmation-btn" type="submit" onclick="collectValues()">
-          Add
-        </button>
-      </div>
+        <button class="freeBtn">Add free item</button>
+        <button class="notInterestedBtn">Not Interested</button>
     </div>
-    <!------------------New Order Items ------------------------------->
-    <div id="order-view" class="order-view">
-      <div id="order-items" class="order-items"></div>
-      <h3 id="totalPriceVisual">Total: $0</h3>
-      <!------------------Day Drop Down ------------------------------->
-      <select name="day-dropdown" id="day-dropdown">
-        <option value="choose-day">Delivery Day</option>
-        <option id="daySelection" value="Monday">Monday</option>
-        <option id="daySelection" value="Tuesday">Tuesday</option>
-        <option id="daySelection" value="Wednesday">Wednesday</option>
-        <option id="daySelection" value="Thursday">Thursday</option>
-        <option id="daySelection" value="Friday">Friday</option>
-        <option id="daySelection" value="Saturday">Saturday</option>
-        <option id="daySelection" value="Sunday">Sunday</option>
-      </select>
-      <!------------------Time Drop Down ------------------------------->
-      <select name="time-dropdown" id="time-dropdown">
-        <option value="choose-time">Delivery Window</option>
-        <option id="timeSelection">12:00pm - 12:30pm</option>
-        <option id="timeSelection">12:30pm - 1:00pm</option>
-        <option id="timeSelection">12:30pm - 1:00pm</option>
-        <option id="timeSelection">1:30pm - 2:00pm</option>
-        <option id="timeSelection">2:30pm - 3:00pm</option>
-        <option id="timeSelection">3:30pm - 4:00pm</option>
-        <option id="timeSelection">4:00pm - 4:30pm</option>
-        <option id="timeSelection">4:30pm - 5:00pm</option>
-        <option id="timeSelection">5:00pm - 5:30pm</option>
-        <option id="timeSelection">5:30pm - 6:00pm</option>
-        <option id="timeSelection">6:00pm - 6:30pm</option>
-        <option id="timeSelection">6:30pm - 7:00pm</option>
-        <option id="timeSelection">7:00pm - 7:30pm</option>
-        <option id="timeSelection">7:30pm - 8:00pm</option>
-        <option id="timeSelection">8:00pm - 8:30pm</option>
-        <option id="timeSelection">8:30pm - 9:00pm</option>
-        <br />
-      </select>
-
-      <button class="place-order-btn" onclick="orderConfirm()">
-        Place Order
-      </button>
-    </div>
-  </section>
-
-  <!------------------Order Placed ------------------------------->
-  <div class="results hide" id="results"></div>
+  </div>
 
 
-    <script src="js/test menu.js"></script>
-  </body>
+
+
+
+
+  <script src="js/test menu.js"></script>
+</body>
+
 </html>
