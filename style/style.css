@@ -139,7 +139,9 @@ li:hover {
 }
 
 /**************************** Order Page *****************************/
-
+h1{
+  text-align: center;
+}
 .order-form {
   display: flex;
   align-items: center;
@@ -356,4 +358,26 @@ hr {
 
 .hide {
   display: none;
+}
+
+/**************************** Choices *****************************/
+
+.choices{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.choiceBtns{
+  height: 50px;
+  width: 80px;
+  background:white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+.choiceBtns:hover {
+  background: black;
+  color: white;
 }
